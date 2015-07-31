@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffc107"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="10dp"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:minHeight="?attr/actionBarSize" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!--    主体  -->
+            <com.bob.library.DragTopLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#607d8b"
+                android:id="@+id/drag_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <!-- 头部View-->
+                <LinearLayout
+                    android:id="@+id/top_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text"
+                        android:text="Top View"
+                        android:textSize="18sp"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/tubiao"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffc107"
+                        android:orientation="vertical">
+
+                            <!--  中间指示器  -->
+                            <com.bob.sample.widget.PagerSlidingTabStrip
+                                android:id="@+id/pager_tabstrip"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                app:allowWidthFull="true"
+                                app:slidingBlock="@drawable/image_sliding_block"
+                                android:background="@drawable/sliding_tab_strip_background"/>
+
+                            <!--  指示器分页内容  -->
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/view_pager"
+                                android:background="#ffffff"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+
+                </com.bob.library.DragTopLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bob.processbutton">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light">
+    <activity
+        android:name=".MainActivity"
+        android:screenOrientation="portrait"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".MessageActivity"
+        android:screenOrientation="portrait"
+       />
+
+    <activity
+        android:name=".SignInActivity"
+        android:configChanges="orientation|screenSize|smallestScreenSize"
+         />
+
+    <activity
+        android:name=".UploadActivity"
+        android:screenOrientation="portrait"
+        />
+
+    <activity
+        android:name=".StateSampleActivity"
+        android:screenOrientation="portrait"
+         />
+    </application>
+</manifest>

@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--  DividerItemDecoration类中使用了android:listDivider 来作为分隔线的attr   -->
+        <item name="android:listDivider">@drawable/item_divider</item>
+    </style>
+
+</resources>

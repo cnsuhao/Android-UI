@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cross_view_stroke_color">@android:color/black</color>
+    <drawable name="state_pressed">#cccccc</drawable>
+    <drawable name="state_focused">#cccccc</drawable>
+    <drawable name="normal_color">@android:color/white</drawable>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bob="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.my.indicatortabbar.IndicatorTabBar
+        android:id="@+id/indicatorTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_color"
+        bob:tab_text_color="@color/tab_text_color"
+        bob:tab_text_selected_color="@color/tab_text_selected_color"
+        bob:tab_text_size="@dimen/tab_text_size"
+        ></com.my.indicatortabbar.IndicatorTabBar>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>

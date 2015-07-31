@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@color/accent_material_dark">
+        <RadioButton
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dip"
+            android:text="one"
+            android:textSize="20sp"
+            android:checked="true"
+            android:background="@drawable/switcher_checked"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dip"
+            android:text="two"
+            android:background="@drawable/switcher_checked"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dip"
+            android:background="@drawable/switcher_checked"
+            android:text="three"
+            android:gravity="center"
+            android:textSize="20sp" />
+        <RadioButton
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dip"
+            android:text="four"
+            android:gravity="center"
+            android:background="@drawable/switcher_checked"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+
+
+    <android.support.v4.view.ViewPager
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_above="@id/group"
+        android:layout_alignParentTop="true"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/add"
+        android:icon="@drawable/ic_menu_add"
+        app:showAsAction="ifRoom"
+        android:title="Add"
+        ></item>
+
+    <item android:id="@+id/delete"
+        android:icon="@drawable/ic_menu_delete"
+        app:showAsAction="ifRoom"
+        android:title="Delete"
+        ></item>
+
+    <item android:id="@+id/recycler_list_view"
+        app:showAsAction="never"
+        android:title="ListView"
+        ></item>
+
+    <item android:id="@+id/recycler_grid_view"
+        app:showAsAction="never"
+        android:title="GridView"
+        ></item>
+
+    <item android:id="@+id/recycler_grid_view_hor"
+        app:showAsAction="never"
+        android:title="横向GridView"
+        ></item>
+
+    <item android:id="@+id/waterfall"
+        app:showAsAction="never"
+        android:title="瀑布流"
+        ></item>
+
+
+
+
+
+
+</menu>
